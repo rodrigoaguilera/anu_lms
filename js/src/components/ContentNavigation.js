@@ -49,7 +49,7 @@ const ContentNavigation = ({ isIntro, sections, currentLesson, nextLesson, curre
 
             {/* No next lesson */}
             {typeof sections[currentIndex + 1] === 'undefined' && !nextIsLesson && !nextIsQuiz && (
-              <Button {...buttonProps} href={`/anu-lms/finish/${currentLesson.id}`}>
+              <Button {...buttonProps} href={`/node/${currentLesson.id}/finish`}>
                 {disabled ?
                   completeAnswer :
                   (

@@ -1,5 +1,5 @@
  anu_lms.course.finish:
-  path: '/anu-lms/finish/{node}'
+  path: '/node/{node}/finish'
   defaults:
     _title: 'Finish'
     _controller: '\Drupal\anu_lms\Controller\FinishCourse::complete'
